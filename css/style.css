@@ -34,9 +34,19 @@ img {
     background: url('/img/background.jpg') no-repeat center center/cover;
 }
 
+/* Logo container */
 .showcase-top {
     position: relative;
-    height:
+    height: 90px;
+}
+
+/* Position logo relative to its parent and centered */
+.showcase-top img {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .btn {

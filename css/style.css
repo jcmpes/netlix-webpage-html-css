@@ -15,6 +15,10 @@ body {
     color: #999;
 }
 
+h1 {
+    color: #fff;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -49,6 +53,35 @@ img {
     transform: translate(-50%, -50%)
 }
 
-.btn {
 
+/* Bottons */
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    border-radius: 3px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-rounded {
+    border-radius: 8px;
+}
+
+.btn-xl {
+    font-size: 2rem;
+    padding: 1.2rem 2rem;
+    text-transform: uppercase;
 }

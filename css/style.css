@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #DF2200;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #999;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase {
+    width: 100%;
+    height: 100vh;
+    background: url('/img/background.jpg') no-repeat center center/cover;
+}
+
+.showcase-top {
+    position: relative;
+    height:
+}
+
+.btn {
+
+}

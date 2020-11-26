@@ -65,8 +65,7 @@ img {
     position: absolute;
     top: 50%;
     left: 0;
-    /* Correct offset of image */
-    transform: translate(30%, -50%);
+    margin-left: 4rem;
 }
 
 /* Position sign up button relative to its parent and to the right */
@@ -75,8 +74,8 @@ img {
     z-index: 2;
     top: 50%;
     right: 0;
-    /* Correct offset of button */
-    transform: translate(-50%, -50%);
+    margin-right: 4rem;
+
 }
 
 .showcase-content {
@@ -127,11 +126,13 @@ img {
 .btn:hover {
     opacity: 0.9;
     transform: translateY(-2px);
+
 }
 
 .btn:active {
     opacity: 1;
     transform: translateY(0);
+
 }
 
 .btn-rounded {

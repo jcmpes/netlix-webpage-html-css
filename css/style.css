@@ -20,6 +20,10 @@ h1 {
     color: var(--font-primary);
 }
 
+#signin {
+    font-size: 1.8rem;
+}
+
 a {
     color: var(--font-primary);
     text-decoration: none;
@@ -110,6 +114,27 @@ img {
     max-width: 90%;
 }
 
+.dialog {
+    background: rgba(0,0,0,.6);
+    z-index: 2;
+    width: 370px;
+    height: 470px;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 30px 60px;
+    transform: translateY(-20%)
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input {
+    height: 3rem;
+    margin: 0 0 30px; 
+}
 
 /* Bottons */
 .btn {

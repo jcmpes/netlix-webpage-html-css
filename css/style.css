@@ -115,50 +115,6 @@ img {
     top: 45px
 }
 
-/* .dialog {
-    background: rgba(0,0,0,.6);
-    z-index: 2;
-    width: 370px;
-    height: 470px;
-    padding: 30px 60px;
-    transform: translateY(-20%);
-
-}
-
-form {
-    padding: 15px 0 0;
-    margin-top: 10px;
-    width: 100%;
-}
-
-form label {
-    justify-content: left;
-    display: block;
-
-}
-
-form input {
-    font-family: inherit;
-    width: 100%;
-    border: 0;
-    border-bottom: 2px solid #9b9b9b;
-    outline: 0;
-    font-size: 1.3rem;
-    color: #fff;
-    padding: 7px 0;
-    background: transparent;
-    transition: border-color 0.2s;
-}
-
-form input:focus {
-    border: 3px;
-
-}
-
-form input::placeholder {
-    color: transparent;
-} */
-
 /* Bottons */
 .btn {
     display: inline-block;

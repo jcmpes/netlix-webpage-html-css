@@ -1,0 +1,41 @@
+/* Logo container */
+.header {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+/* Position logo relative to its parent and to the left */
+.header img {
+    width: 150px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    margin-left: 4rem;
+}
+
+/* Position sign up button relative to its parent and to the right */
+.header a {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    right: 0;
+    margin-right: 4rem;
+}
+
+/* Mobile media query */
+@media (max-width: 480px) {
+    .header {
+        height: 55px;
+    }
+
+    .header a {
+        font-size: smaller;
+        display: none;
+    }
+
+    .header img {
+        width: 120px;
+        margin-left: 2rem;
+    }
+}

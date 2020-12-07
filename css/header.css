@@ -5,14 +5,16 @@
     height: 90px;
 }
 
-/* Position logo relative to its parent and to the left */
-.header img {
+/* Logo of index page */
+.showcase > .header > img {
     width: 150px;
     position: absolute;
     top: 30%;
     left: 0;
     margin-left: 4rem;
 }
+
+
 
 /* Position sign up button relative to its parent and to the right */
 .header a {

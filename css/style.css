@@ -37,14 +37,6 @@ img {
     width: 100%;
 }
 
-/* Desktop  */
-
-/* Login container */
-.login-container {
-    max-width: 90%;
-    top: 45px;
-}
-
 /* Bottons */
 .btn {
     display: inline-block;

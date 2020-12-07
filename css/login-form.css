@@ -62,6 +62,10 @@ div.input-group {
     color: orange;
 }
 
+.input-underlined > input:invalid { 
+    border-bottom: 0.15rem solid orange;
+}
+
 .input-underlined > input:focus + .input-label,
 .input-underlined > input:valid + .input-label {
     top: 0;

@@ -3,39 +3,36 @@
     font-family: "Roboto";
 }
 
-div.dialog {
+.login-body > .login-wrapper {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
-    justify-content: center;
-    margin-top: 30px;
-    padding: 21px;
-    border-radius: 4px;
-    background: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    
 }
 
 h1.title {
-    text-align: center;
-    /* margin-bottom: 45px; */
+    text-align: left;
+    margin-bottom: 2rem;
 }
 /* https://codepen.io/fatmali/pen/aboNdra?editors=1100 */
 div.input-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     position: relative;
-    width: 20rem;
 }
 
 .input-underlined > input {
     border: none;
-    /* border-bottom: 0.125rem solid rgba(19, 19, 21, 0.6); */
-    background-color: #3b3b3b;
+    border-radius: 5px;
+    border-bottom: 0.12rem solid rgba(19, 19, 21, 0.6);
+    background-color: #373737;
     width: 100%;
-    height: 3rem;
-    font-size: 1.0625rem;
-    padding-left: 0.875rem;
-    line-height: 147.6%;
-    padding-top: 0.825rem;
+    height: 3.2rem;
+    font-size: 1.05rem;
+    padding-left: 1.3rem;
+    line-height: 140%;
+    padding-top: 0.8rem;
     padding-bottom: 0.5rem;
+    color: var(--font-primary);
 }
 
 .input-underlined > input:focus {
@@ -46,36 +43,39 @@ div.input-group {
 .input-underlined > .input-label {
     position: absolute;
     top: 1rem;
-    left: 0.8rem;
+    left: 1.3rem;
     line-height: 1.2rem;
     color: #838383;
     transition: top 0.2s;
 }
 
-/* .input-underlined > .input-helper {
-    font-size: 0.9375rem;
-    color: rgba(190, 190, 190, 0.938);
-    letter-spacing: 0.0275rem;
-    margin: 0.125rem 0.875rem;
-} */
+.input-underlined > .input-helper {
+    opacity: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+    margin: 0.1rem 0.8rem;
+}
 
-/* .input-underlined > input:invalid ~ .input-helper {
+.input-underlined > input:invalid ~ .input-helper {
+    opacity: 1;
+    display: block;
     color: orange;
-} */
+}
 
 .input-underlined > input:focus + .input-label,
 .input-underlined > input:valid + .input-label {
     top: 0;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     margin-bottom: 32px;
 }
 
 .input-underlined > input:focus + .input-label {
     color: #838383;
-    font-size: 0.7rem;
 }
 
 #signin-btn {
+    position: relative;
+    bottom: 0px;
     width: 100%;
     height: 3rem;
     border-radius: 4px;
@@ -86,31 +86,10 @@ div.input-group {
 
 /* Mobile media query */
 @media (max-width: 480px) {
-    .showcase {
+    /* .showcase {
         width: 100%;
         height: 100vh;
         background: black;
-    }
-
-    div.showcase-content {
-        justify-self: center;
-    }
-    div.dialog {
-        margin-top: 60px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 21px;
-        border-radius: 4px;
-        background: rgba(0, 0, 0, 0.6);
-    }
-
-    .dialog {
-        background: rgba(0, 0, 0, 0.9);
-        z-index: 2;
-        width: 370px;
-        height: 470px;
-        padding: 30px 60px;
-        transform: translateY(-20%);
     }
 
     .form {
@@ -128,5 +107,5 @@ div.input-group {
         font-size: 1rem;
         padding: 0.8rem 1.3rem;
         text-transform: uppercase;
-    }
+    } */
 }

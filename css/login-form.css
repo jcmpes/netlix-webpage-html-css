@@ -74,8 +74,6 @@ div.input-group {
 }
 
 #signin-btn {
-    position: relative;
-    bottom: 0px;
     width: 100%;
     height: 3rem;
     border-radius: 4px;
@@ -83,6 +81,83 @@ div.input-group {
     font-size: 1rem;
     font-weight: 700;
 }
+
+.login-form-help {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1rem;
+}
+
+.login-form-help {
+    font-size: .9rem;
+}
+
+.login-remember-me input#rememberMe {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .6rem; 
+}
+
+/* Custom checkbox
+Source: https://www.appitventures.com/blog/styling-checkbox-css-tips */
+
+.login-remember-me .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 22px;
+    width: 22px;
+    background-color: #737373;
+    border-radius: 3px;
+    /* border: 0; */
+    border: 2px solid black;
+}
+
+.login-remember-me .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 3px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+}
+
+.login-remember-me input:checked ~ .checkbox-custom {
+    background-color: #737373;
+    border-radius: 3px;
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    border: 2px solid black;
+}
+
+.login-remember-me input:checked ~ .checkbox-custom::after {
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 12px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+
+#pass-recovery-link {
+    color: var(--font-secondary);
+}
+
+#pass-recovery-link:hover {
+    text-decoration: underline;
+} 
 
 /* Mobile media query */
 @media (max-width: 480px) {

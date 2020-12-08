@@ -67,7 +67,6 @@ div.input-group {
 }
 
 .input-underlined > .input-helper {
-    /* font-weight: lighter; */
     opacity: 0;
     font-size: 0.8rem;
     letter-spacing: 0.03rem;
@@ -160,7 +159,7 @@ Source: https://www.appitventures.com/blog/styling-checkbox-css-tips */
 .login-remember-me input:checked ~ .checkbox-custom::after {
     transform: rotate(45deg) scale(1);
     opacity: 1;
-    left: 6px;
+    left: 7px;
     top: 2px;
     width: 6px;
     height: 12px;
@@ -210,15 +209,21 @@ Source: https://www.appitventures.com/blog/styling-checkbox-css-tips */
         z-index: -1;
     }
 
+    .login-body {
+        display: flex;
+        justify-content: center;
+    }
+
     .login-body > .login-wrapper {
         background-color: rgba(0,0,0,.75);
         padding: 3rem;
         margin: 4rem 8rem;
         min-height: 500px;
+        width: 480px;
     }
 
     .login-body > .login-wrapper > .login-desktop-wrapper {
-        width: 85%;
+        width: 340px;
         margin: auto;
     }
 

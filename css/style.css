@@ -17,11 +17,8 @@ body {
 }
 
 h1 {
+    font-size: 2rem;
     color: var(--font-primary);
-}
-
-#signin {
-    font-size: 1.8rem;
 }
 
 a {

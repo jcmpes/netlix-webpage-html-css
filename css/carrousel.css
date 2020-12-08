@@ -1,0 +1,23 @@
+.items {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 5000px;
+    transform: 
+        translateY(-50%)
+        translateX(-50%);
+}
+
+.items li {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    list-style: none;
+    width: 200px;
+    height: 120px; 
+    background-color: black;
+    transition-duration: .5s;
+    overflow: hidden;
+    cursor: pointer;
+}

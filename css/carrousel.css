@@ -1,3 +1,7 @@
+body {
+    background-color: #141414;
+}
+
 .items {
     position: fixed;
     top: 50%;
@@ -20,4 +24,63 @@
     transition-duration: .5s;
     overflow: hidden;
     cursor: pointer;
+}
+
+.items li .bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
+}
+
+#film-1, #film-2, #film-3, #film-4, #film-5, #film-6, #film-7, #film-8 {
+    background-image: url("/img/films/la-sombra-del-poder.webp");
+}
+
+.items li:hover {
+    transition-delay: .5s;
+    width: 400px;
+    height: 250px;
+}
+
+.items li:hover a .content {
+    transform: 
+        translateY(0)
+        translateX(-50%);
+    transition-delay: .75s;
+    opacity: 1;
+}
+
+.items li a {
+    color: var(--font-primary);
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.items li a .content {
+    background: linear-gradient(transparent, rgba(0,0,0,.75));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: 
+        translateY(100%)
+        translateX(-50%);
+    transition-duration: 1s;
+    opacity: 0;
+    padding: 40px 10px 10px 10px;
+    width: 400px;
+}
+
+.items li a .content h2 {
+    font-weight: 300;
+    color: var(--font-primary);
+    font-size: 30px;
 }

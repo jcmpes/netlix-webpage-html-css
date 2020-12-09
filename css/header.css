@@ -38,8 +38,8 @@
 .main-header img {
     position: absolute;
     width: 70px;
-    top: 50%;
-
+    top: 30%;
+    margin-left: 1rem;
 }
 
 /* Position sign up button relative to its parent and to the right */

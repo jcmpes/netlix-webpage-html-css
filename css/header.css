@@ -1,12 +1,19 @@
-/* Logo container */
+/* Header of showcase page*/
 .header {
     position: relative;
     z-index: 2;
     height: 90px;
 }
 
-/* Logo of index page */
-.showcase > .header > img {
+/* Header of login page */
+.header-login-page {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+/* Logo of showcase page */
+.header > img {
     width: 150px;
     position: absolute;
     top: 30%;
@@ -14,6 +21,14 @@
     margin-left: 4rem;
 }
 
+/* Logo of login page */
+.header-login-page > img {
+    width: 190px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    margin-left: 1rem;
+}
 
 
 /* Position sign up button relative to its parent and to the right */
@@ -39,5 +54,9 @@
     .header img {
         width: 120px;
         margin-left: 2rem;
+    }
+
+    .header-login-page > img {
+        margin-left: 1.5rem;
     }
 }

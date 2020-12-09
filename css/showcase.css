@@ -26,7 +26,7 @@
 .showcase-content {
     position: relative;
     z-index: 2;
-    margin: auto;
+    margin: auto 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

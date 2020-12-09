@@ -1,15 +1,17 @@
 :root {
     --header-height: 41px;
-    --player-height: 400px;
 }
 
 body {
     background-color: #141414;
+    
 }
 
 main {
-    position: relative;
-    top: var(--header-height);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 

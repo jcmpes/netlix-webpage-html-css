@@ -26,10 +26,13 @@
 .ratings {
     display: flex;
     align-items: baseline;
-
 }
 
 .ratings p {
-
     font-size: 0.8rem;
+}
+
+.ratings p span {
+    font-weight: bold;
+    font-size: .9rem;
 }

@@ -1,3 +1,10 @@
+.main-header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+}
+
 .main-header .navbar .nav-menu {
     position: fixed;
     width: 240px;
@@ -54,6 +61,68 @@
     display: block;
 }
 
+.main-header .navbar .search {
+    position: absolute;
+    right: 0px;
+    margin-right: 1rem;
+    color: var(--font-primary);
+    
+}
+
+.main-header .navbar .search form {
+    border: red 1px solid;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    z-index: 0;
+    background-color: #141414;
+    
+    border: 1px solid white;
+}
+
+.main-header .navbar .search .search-input {
+    width: 0px;
+    transition: all 1.25s ease;
+    background-color: #141414;
+    opacity: .8;
+    border: none;
+    outline: none;
+    color: var(--font-primary);
+    padding: .5rem .5rem .5rem 1.7rem;
+
+    
+}
+
+#search-checkbox {
+    position: relative;
+    top: 14px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.main-header .navbar .search label {
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: 14px;
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+#search-checkbox:checked ~ form {
+    display: block;
+    
+}
+
+#search-checkbox:checked ~ form .search-input {
+    width: 250px;
+}
+
+#search-checkbox:checked ~ #search-label {
+    transform: translateX(-230px);
+    transition-duration: .5s;
+}
 
 @media (min-width: 768px) {
     .main-header .navbar .nav-menu,
@@ -74,10 +143,6 @@
         
     }
 
-    .main-header .nav-menu .nav-tab {
-        
-    }
-
     .main-header .nav-menu .nav-tab a {
         padding: 10px;
         font-size: .8rem;
@@ -85,9 +150,5 @@
 
     .navbar .menu-label {
         display: none;
-    }
-    
-    .nav-menu.open:hover {
-
     }
 }

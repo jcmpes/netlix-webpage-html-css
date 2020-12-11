@@ -22,7 +22,6 @@ article > section > h2 {
     margin-bottom: .3rem;
     font-size: 1rem;
     color: var(--font-primary);
-
 }
 
 .main-player > video {
@@ -40,12 +39,13 @@ article > section > h2 {
 .items {
     position: relative;
     top: 50%;
-    left: 100%;
-    text-align: left;
-    /* width: 5000px; */
-    display: flex;
-    flex-wrap: nowrap;
-    width: calc(2 * 100vw);
+    left: 30px;
+    text-align: center;
+    width: 5000px;
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* overflow: hidden; */
+    /* width: calc(3 * 100vw); */
     margin-left: 1.3rem;
     transform: 
         translateY(-50%)
@@ -56,14 +56,13 @@ article > section > h2 {
     position: relative;
     vertical-align: middle;
     display: inline-block;
-    
+    text-align: left;
     list-style: none;
     width: 200px;
     height: 120px; 
     background-color: black;
     border-radius: 5px;
     transition-duration: .5s;
-    /* overflow: hidden; */
     cursor: pointer;
 }
 
@@ -83,8 +82,8 @@ article > section > h2 {
     background-image: url("/img/films/la-sombra-del-poder.webp");
 }
 
-.items li:hover {
-    transition-delay: .5s;
+.items li:hover, .items li:active {
+    transition-delay: .1s;
     width: 250px;
     height: 150px;
     transform: translateY(-80%);
@@ -93,14 +92,14 @@ article > section > h2 {
 .items li:hover .details {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     padding: 1.3rem 1rem;
     background-color: #2f2f2f;
     width: 100%;
     height: 150px;
     color: var(--font-primary);
     opacity: 1;
-    transition-delay: .75s;
-    z-index: 3;
+    transition-delay: .3s;
 }
 
 .items li a {

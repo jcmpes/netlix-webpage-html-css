@@ -19,27 +19,33 @@ main {
 
 .featured {
     position: relative;
-    top: -40px;
+    top: -160px;
     border: 1px solid red;
-    height: 150px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    /* overflow-x: scroll; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+
 }
 
 .films {
     position: relative;
-    top: -30px;
+    top: -160px;
     border: 1px solid pink;
-    height: 150px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    
+    overflow-x: auto;
+    overflow-y: hidden;
+
 }
 
-article > section > h2 {
-    position: relative;
-    top: 0px;
+section > h2 {
+    position: absolute;
+    top: 90px;
+    left: 0px;
     margin-left: 1.3rem;
     font-size: 1rem;
     color: var(--font-primary);
@@ -58,14 +64,12 @@ article > section > h2 {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 20px;
+    top: 120px;
     left: 0px;
     /* text-align: center; */
     width: 1650px;
     border: 1px solid yellow;
     margin-left: 1.3rem;
-    /* transform: 
-        translateY(119px) */
 }
 
 .items li {

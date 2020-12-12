@@ -17,7 +17,6 @@ main {
 }
 
 article {
-    border: thin solid green;
     transform: translateY(-60px);
 }
 
@@ -38,7 +37,6 @@ section > h1 {
 .container {
     display: flex;
     gap: 5px;
-    border: solid thin red;
     margin: 10px;
     width: 100%
 }

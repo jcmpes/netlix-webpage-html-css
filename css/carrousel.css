@@ -12,14 +12,35 @@ main {
     top: 0px;
     width: 100%;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
 }
 
+.featured {
+    position: relative;
+    top: -140px;
+    border: 1px solid red;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.films {
+    position: relative;
+    top: -200px;
+    /* border: 1px solid red; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
 
 article > section > h2 {
-    position: relative;
-    bottom: 60px;
+    position: absolute;
+    top: 95px;
     margin-left: 1.3rem;
-    margin-bottom: .3rem;
     font-size: 1rem;
     color: var(--font-primary);
 }
@@ -32,24 +53,19 @@ article > section > h2 {
 *
 * Source: https://codemyui.com/netflix-style-card-hover-animation/
 */
-.featured {
-    margin-bottom: 1.5rem;
-}
 
 .items {
-    position: relative;
-    top: 50%;
-    left: 30px;
-    text-align: center;
-    width: 5000px;
-    /* display: flex; */
-    /* flex-wrap: nowrap; */
-    /* overflow: hidden; */
-    /* width: calc(3 * 100vw); */
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 119px;
+    left: 0px;
+    /* text-align: center; */
+    width: 1650px;
+    border: 1px solid yellow;
     margin-left: 1.3rem;
-    transform: 
-        translateY(-50%)
-        translateX(-50%);
+    /* transform: 
+        translateY(119px) */
 }
 
 .items li {
@@ -64,6 +80,8 @@ article > section > h2 {
     border-radius: 5px;
     transition-duration: .5s;
     cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid green;
 }
 
 .items li .bg-img {
@@ -72,6 +90,7 @@ article > section > h2 {
     height: 100%;
     background-size: cover;
     background-position: center top;
+    border-radius: 6px;
 }
 
 .items li .details {
@@ -88,6 +107,8 @@ article > section > h2 {
     height: 150px;
     transform: translateY(-80%);
 }
+
+
 
 .items li:hover .details {
     display: flex;

@@ -11,7 +11,7 @@ main {
     position: absolute;
     top: 0px;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     display: flex;
     flex-direction: column;
 
@@ -19,27 +19,27 @@ main {
 
 .featured {
     position: relative;
-    top: -140px;
+    top: -40px;
     border: 1px solid red;
-    height: 300px;
+    height: 150px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    /* overflow-x: scroll; */
 }
 
 .films {
     position: relative;
-    top: -200px;
-    /* border: 1px solid red; */
-    height: 300px;
+    top: -30px;
+    border: 1px solid pink;
+    height: 150px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    
 }
 
 article > section > h2 {
-    position: absolute;
-    top: 95px;
+    position: relative;
+    top: 0px;
     margin-left: 1.3rem;
     font-size: 1rem;
     color: var(--font-primary);
@@ -58,7 +58,7 @@ article > section > h2 {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 119px;
+    top: 20px;
     left: 0px;
     /* text-align: center; */
     width: 1650px;
@@ -108,7 +108,8 @@ article > section > h2 {
     transform: translateY(-80%);
 }
 
-.items li:hover > .bg-img {
+.items li:hover > .bg-img,
+.items li:active > .bg-img {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }

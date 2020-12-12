@@ -108,7 +108,10 @@ article > section > h2 {
     transform: translateY(-80%);
 }
 
-
+.items li:hover > .bg-img {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
 
 .items li:hover .details {
     display: flex;

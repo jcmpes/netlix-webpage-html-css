@@ -28,6 +28,20 @@
     margin-left: 1rem;
 }
 
+/* Header of error page */
+.error-page-header {
+    display: flex;
+    width: 100%;
+}
+
+.error-page-header > a{
+    width: 120px;
+    margin: 1rem auto;
+    top: 50%;
+    z-index: 2;
+}
+
+
 /* Header of list page */
 .main-header {
     position: relative;

@@ -2,22 +2,15 @@
     --header-height: 41px;
 }
 
-body {
-    background-color: #141414;
-    
-}
-
 main {
-    position: absolute;
-    top: 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: hidden;   
 }
 
-article {
-    transform: translateY(-60px);
+#content-wrap {
+    padding-bottom: 400px;
 }
 
 .main-player > video {
@@ -56,73 +49,6 @@ section > h1 {
     transition: all .3s cubic-bezier(0.76,-0.03, 0.72, 1.05);
     transition-delay: .2s;
     cursor: pointer;
-}
-
-.details {
-    visibility: hidden;
-    position: absolute;
-    top: 112px;
-    left: 0;
-    right: 0;
-    color: white;
-    background-color:#2f2f2f;
-    transition-delay: .2s;
-    padding: 1rem .8rem;
-}
-
-.details .details-row {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    font-size: 2.2rem;
-    margin-bottom: 5px;
-}
-
-.details .details-row i[class~="fa-play-circle"]:hover {
-    opacity: .9;
-}
-
-.details .details-row i[class~="fa-circle"] {
-    opacity: .7;
-}
-
-.details .details-row span[class="fa-stack"]:hover > i {
-    opacity: 1;
-}
-
-.details .details-row > span:nth-child(3) > i:nth-child(1) {
-    position: relative;
-    left: -4px
-    
-}
-
-.details .details-row > span:nth-child(3) > i:nth-child(2) {
-    position: absolute;
-    left: 9px;
-    top: 7px;   
-}
-
-.details .details-row > span:nth-child(4) > i:nth-child(1) {
-    position: relative;
-    left: -7px   
-}
-
-.details .details-row > span:nth-child(4) > i:nth-child(2) {
-    position: absolute;
-    left: 6px;
-    top: 9px;   
-}
-
-.filled {
-    color: pink;
-}
-
-.details .details-row span[class="fa-stack"] {
-    font-size: 1.1rem;
-}
-
-.details p {
-    margin: 0; 
 }
 
 .item:hover {

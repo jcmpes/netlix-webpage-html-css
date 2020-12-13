@@ -9,14 +9,6 @@ main {
     overflow: hidden;   
 }
 
-#content-wrap {
-    padding-bottom: 400px;
-}
-
-.main-player > video {
-    width: 100%;
-}
-
 section.featured {
     position: relative;
     top: -50px;
@@ -24,13 +16,13 @@ section.featured {
 
 section > h1 {
     font-size: .8rem;
-    margin-left: 10px;
+    margin-left: 3%;
 }
 
 .container {
     display: flex;
     gap: 5px;
-    margin: 10px;
+    margin: .5rem 3%;
     width: 100%
 }
 

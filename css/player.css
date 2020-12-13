@@ -1,4 +1,3 @@
-
 :root {
     --header-height: 41px;
 }
@@ -15,10 +14,33 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-
 }
 
-.main-player > video{
+.main-player {
+    position: relative;
+}
+
+.main-player > video {
     width: 100vw;
+}
+
+.trailer-details {
+    position: absolute;
+    top: 20%;
+    height: 100%;
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.trailer-title {
+    width: 90%;
+}
+
+.trailer-excerpt p {
+    font-size: .5rem;
+    color: var(--font-primary);
+    text-shadow: 1px 1px 3px rgba(0,0,0, .3);
 }
 

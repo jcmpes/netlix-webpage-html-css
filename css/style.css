@@ -20,6 +20,8 @@ body {
 
 main {
     padding-bottom: 11rem;
+    position: relative;
+    top: -41px;
 }
 
 footer {

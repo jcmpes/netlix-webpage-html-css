@@ -10,7 +10,7 @@
 .star-ratings {
     color: #fff;
     font-size: 1.8rem;
-    width: 9rem;
+    width: calc(1.8rem * 5);
     position: relative;
     margin-right: .5rem;
     margin-bottom: .5rem;

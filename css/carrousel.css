@@ -39,7 +39,12 @@ section > h1 {
     height: auto;
     background-size: cover;
     background-position: center top;
-    border-radius: 6px;
+    
+}
+
+.details {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 .item {
@@ -58,6 +63,13 @@ section > h1 {
                 scale(1.4);   
 }
 
+.item:hover img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
 .item:nth-child(1):hover {
     transform:  translateY(-40%)
                 scale(1.4)
@@ -73,7 +85,6 @@ section > h1 {
     align-items: baseline;
     font-size: .7rem;
     margin-top: 2px;
-    
 }
 
 .other-details .year {

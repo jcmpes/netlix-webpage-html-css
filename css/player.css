@@ -1,0 +1,24 @@
+
+:root {
+    --header-height: 41px;
+}
+
+body {
+    background-color: #141414;
+    position: relative;
+    height: 1200px;
+}
+
+main {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-player > video{
+    width: 100vw;
+}
+

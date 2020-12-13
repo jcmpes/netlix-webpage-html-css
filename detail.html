@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keepflix</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav-menu.css">
+
+    <link rel="stylesheet" href="./css/player.css">
+    <link rel="stylesheet" href="./css/detail-view-details.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <header class="main-header">
+        
+        
+        <div class="logo">
+            <img src="img/keepflix.png" alt="KeepWatch">
+        </div>
+        <nav class="navbar">
+
+            <input type="checkbox" id="menu-checkbox">
+            <label class="menu-label" for="menu-checkbox">Menú <i class="fas fa-sort-down"></i></label>
+
+            <ul class="nav-menu open">
+                <li class="nav-tab">
+                    <a href="" class="">Inicio</a>
+                </li>
+                <li class="nav-tab">
+                    <a href="" class="">Películas</a>
+                </li>
+                <li class="nav-tab">
+                    <a href="" class="">Series</a>
+                </li>
+                <li class="nav-tab">
+                    <a href="" class="">Mi Lista</a>
+                </li>
+                <li class="nav-tab">
+                    <a href="" class="">Cerrar sesión</a>
+                </li>
+            </ul>
+
+            <div class="search">
+                <input type="checkbox" id="search-checkbox">
+                <label id="search-label" for="search-checkbox">
+                    <i class="fas fa-search"></i>
+                </label>
+                
+                <form action="" method="get">
+                    <input type="text" id="search-input" class="search-input"
+                    placeholder="Títulos o géneros">
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="main-player">
+                <video controls src="./video/paragliding.mp4" class="viewer"></video>
+        </article>
+        <article>
+            <section>
+                <div class="title">La Sombra del Poder</div>
+                <div class="item-detail-details">                            
+                            
+                            <div class="ratings">
+                                <div class="star-ratings">
+                                    <div class="star-ratings-top-layer" style="width: 66%">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+                                    <div class="star-ratings-bottom-layer">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+                                    
+                                </div>
+                                <p><span>6,6</span> de 22.398 votos</p>
+                            </div>
+                            <div class="other-details">
+                                <p class="year">2009</p>
+                                <span>18+</span>
+                                <p>2h 3min</p>           
+                            </div>
+                            
+                            <p></p>
+                        </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

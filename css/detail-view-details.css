@@ -1,0 +1,60 @@
+.title {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+.item-detail-details {
+    margin: 1rem;
+}
+
+.star-ratings {
+    color: #fff;
+    font-size: 1.8rem;
+    width: 9rem;
+    position: relative;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    padding: 0;
+
+}
+
+.star-ratings-bottom-layer {
+    display: block;
+    z-index: 0;
+}
+
+.star-ratings-top-layer {
+    color: #fbbc04;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+}
+
+.ratings p span {
+    font-weight: bold;
+
+}
+
+.other-details {
+    display: flex;
+    align-items: baseline;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    color: var(--font-primary)
+    
+}
+
+.other-details .year {
+    margin-right: .5rem;
+    line-height: .8rem;
+}
+
+.other-details span {
+    background-color: tomato;
+    padding: 2px 3px;
+    border-radius: 2px;
+    margin-right: .5rem;
+}

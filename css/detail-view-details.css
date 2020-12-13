@@ -1,9 +1,10 @@
-.container {
+.item-details-container {
     display: grid;
-    grid-template-rows: auto auto ;
+    grid-template-rows: auto auto;
+    margin-bottom: 2rem;
 }
 
-.container > * {
+.item-details-container > * {
     padding: 1.5rem;
 }
 
@@ -12,7 +13,7 @@
     margin-bottom: .2rem;
 }
 
-.star-ratings {
+.item-details-container .star-ratings {
     color: #fff;
     font-size: 1.8rem;
     width: calc(1.8rem * 5);
@@ -22,12 +23,12 @@
     padding: 0;
 }
 
-.star-ratings-bottom-layer {
+.item-details-container .star-ratings-bottom-layer {
     display: block;
     z-index: 0;
 }
 
-.star-ratings-top-layer {
+.item-details-container .star-ratings-top-layer {
     color: #fbbc04;
     position: absolute;
     top: 0;
@@ -37,26 +38,29 @@
     overflow: hidden;
 }
 
-.ratings p span {
+.item-details-container .ratings p span {
     font-weight: bold;
     font-size: 1.1rem;
 }
 
-.other-details {
+.item-details-container .ratings p {
+    font-size: 1rem;
+}
+
+.item-details-container .other-details {
     display: flex;
     align-items: baseline;
     font-size: 1.2rem;
     margin-top: 2px;
-    color: var(--font-primary)
-    
+    color: var(--font-primary) 
 }
 
-.other-details .year {
+.item-details-container .other-details .year {
     margin-right: .5rem;
     line-height: .8rem;
 }
 
-.other-details span {
+.item-details-container .other-details span {
     background-color: tomato;
     padding: 2px 3px;
     border-radius: 2px;
@@ -64,7 +68,7 @@
 }
 
 @media (min-width: 768px) {
-    .container {
+    .item-details-container {
         grid-template-columns: 40% 60%;
     }
 }

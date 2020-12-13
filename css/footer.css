@@ -1,7 +1,11 @@
 main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     position: relative;
     top: -41px;
-    padding-bottom: 75px;
+    padding-bottom: 140px; 
 }
 
 footer {

@@ -36,13 +36,6 @@
     background-image: linear-gradient(to bottom,rgba(0,0,0,.6) 10%,rgba(0,0,0,0));
 }
 
-.main-header img {
-    position: absolute;
-    width: 70px;
-    top: 30%;
-    margin-left: 1.3rem;
-}
-
 /* Position sign up button relative to its parent and to the right */
 .header a {
     position: absolute;

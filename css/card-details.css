@@ -18,6 +18,11 @@
     margin-bottom: 5px;
 }
 
+.details .details-row i[class~="fa-play-circle"] {
+    position: relative;
+    bottom: 1px;
+}
+
 .details .details-row i[class~="fa-play-circle"]:hover {
     opacity: .9;
 }

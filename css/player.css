@@ -62,7 +62,8 @@ main {
     border: none;
     border-radius: 3px;
     font-size: .6rem;
-    padding: .3rem .4rem
+    padding: .3rem .4rem;
+    cursor: pointer;
 
 }
 

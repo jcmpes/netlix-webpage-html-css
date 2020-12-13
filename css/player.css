@@ -14,14 +14,25 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .main-player {
     position: relative;
+    
 }
 
 .main-player > video {
     width: 100vw;
+    
+}
+
+.player-bottom-layer {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
 }
 
 .trailer-details {
@@ -29,9 +40,10 @@ main {
     top: 20%;
     height: 100%;
     width: 40%;
-    padding: 1rem;
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .trailer-title {
@@ -41,6 +53,53 @@ main {
 .trailer-excerpt p {
     font-size: .5rem;
     color: var(--font-primary);
-    text-shadow: 1px 1px 3px rgba(0,0,0, .3);
+    text-shadow: 2px 2px 3px rgba(0,0,0, .5);
+    letter-spacing: .2px;
 }
 
+.btn-play {
+    width: 80px;
+    border: none;
+    border-radius: 3px;
+    font-size: .6rem;
+    padding: .3rem .4rem
+
+}
+
+@media all and (min-width: 900px)  {
+    .trailer-details {
+        top: 30%;
+    }
+
+    .trailer-excerpt p {
+        font-size: .9rem;
+    }
+
+    .btn-play {
+        margin-top: .4rem;
+        padding: .5rem .5rem;
+        font-size: .9rem;
+        width: 130px;
+    }
+}
+
+@media all and (min-width: 550px) and (max-width: 900px)  {
+    
+
+    .trailer-excerpt p {
+        font-size: .7rem;
+    }
+
+    .btn-play {
+        margin-top: .3rem;
+        padding: .4rem .4rem;
+        font-size: .7rem;
+        width: 100px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 390px) {
+    .btn-play {
+        display: none;
+    }
+}

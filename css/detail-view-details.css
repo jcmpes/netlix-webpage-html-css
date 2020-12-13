@@ -9,6 +9,7 @@
 
 .title {
     font-size: 1.8rem;
+    margin-bottom: .2rem;
 }
 
 .star-ratings {
@@ -38,7 +39,7 @@
 
 .ratings p span {
     font-weight: bold;
-
+    font-size: 1.1rem;
 }
 
 .other-details {
